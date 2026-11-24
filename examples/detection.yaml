@@ -1,0 +1,25 @@
+task: detection
+data:
+  train: data/train.parquet
+  dev: data/dev.parquet
+  max_len: 1024
+model:
+  model: detector
+  encoder:
+    name: transformer
+    d_model: 384
+    n_layers: 6
+    n_heads: 8
+    dropout: 0.1
+    max_len: 1024
+  head:
+    name: detection
+    hidden: 384
+output_dir: runs/detection_demo
+epochs: 10
+batch_size: 32
+lr: 1.0e-4
+weight_decay: 0.01
+pos_weight: 10.0
+grad_clip: 1.0
+early_stopping_patience: 3

@@ -1,0 +1,7 @@
+- [Home](Home)
+- [Installation](Installation)
+- [Training](Training)
+- [Inference](Inference)
+- [Quick evaluation](Quick-Evaluation)
+- [Extending modules](Extending-Modules)
+- [FAQ](FAQ)
